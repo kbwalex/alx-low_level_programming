@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints alpa in lower case
@@ -8,7 +9,7 @@ int main(void)
 {
 	char lc;
 
-	for (lc = 'a'; lc <= 'z'; lc++)
+	for (lc <= 'a'; lc <= 'z'; lc++)
 	{
 		putchar(lc);
 	}
