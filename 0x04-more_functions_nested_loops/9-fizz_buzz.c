@@ -2,23 +2,25 @@
 
 /**
  * main - print FizzBuzz
+ *
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
+	int start = 1, end = 100
 
-	printf("l");
-	for (n = 2; n <= 100; n++)
+	while (start <= 100)
 	{
-		printf(" ");
-		if (n % 3 == 0)
+		if (start % 3 == 0)
 			printf("Fizz");
-		if (n % 5 == 0)
+		if (start % 5 == 0)
 			printf("Buzz");
-		if (n % 3 != 0 && n % 5 != 0)
-			printf("%d", n);
+		if (start % 3 != 0 && start % 5 != 0)
+			printf("%d", start);
+
+		putchar(start == end ? '\n' : ' ');
+		start++;
 	}
-	printf("\n");
+
 	return (0);
 }
