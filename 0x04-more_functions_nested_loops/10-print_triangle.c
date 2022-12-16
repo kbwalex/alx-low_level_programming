@@ -3,20 +3,29 @@
 /**
  * print_triangle - prints a triangle
  * @size: numbers of lines
+ *
  * Return: no return
  */
 void print_triangle(int size)
 {
-	int i, j;
+	int start = 0, end = size, count;
 
-	for (i 0; i < size; i++)
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
-		for (j = 1; j < (size - i); j++)
-			_putchar(' ');
-		for (j--; j < size; j++)
-			_putchar('#');
-		if (i < (size - l)
-				_putchar('\n');
+		for (count = 0; count < end; count++)
+		{
+			while (start < end)
+			{
+				if ((start + count + 1) >= end)
+					_putchar('#');
+				else
+					_putchar(' ');
+				start++;
+			}
+			start = 0;
+			_putchar('\n');
+		}
 	}
-	-putchar('\n');
 }
