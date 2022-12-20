@@ -1,10 +1,9 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
 * _atoi - function that convert a string to an integer.
-* @s: string
-* Return: integer
+* @s: pointer to character string
+*
+* Return: void
 */
 
 int _atoi(char *s)
