@@ -2,12 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_array -  prints arrays
- *
- * @a: arg a
- * @n: num
- *
- * Return: string to stdout
+ * print_array - check the code for Holberton School students.
+ * @a: is the array.
+ * @n: is the size.
  */
 void print_array(int *a, int n)
 {
@@ -15,18 +12,10 @@ void print_array(int *a, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if (i != n - 1)
+		printf("%d", a[i]);
+
+		if (i < n - 1)
+			printf(", ");
 	}
-	for (i = 0; i < n; i++)
-	{
-		if (i != n - 1)
-		{
-			printf("%d, ", a[i]);
-		}
-		else
-		{
-			printf("%d", a[i]);
-		}
-	}
-	putchar('\n');
+	printf("\n");
 }
