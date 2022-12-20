@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * _atoi - function that convert a string to an integer.
 * @s: pointer to character string
@@ -14,11 +15,11 @@ int _atoi(char *s)
 
 	temt = s;
 	num = 0;
-	sign = 1;
+	sign = l;
 	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
 	{
 		if (*temp == '-')
-			sign *= -1;
+			sign *= -l;
 		temp++;
 	}
 	if (*temp != '\0')
