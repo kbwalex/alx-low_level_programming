@@ -21,7 +21,6 @@ char *create_array(unsigned int size, char c)
 
 	/*Define values with malloc*/
 	buffer = (char *) malloc(size * sizeof(c));
-	
 	if (buffer == 0)
 	{
 		return (NULL);
